@@ -1,0 +1,38 @@
+---
+title: Networking and Data
+description: The broad shape of the client/server protocol and saved runtime data.
+---
+
+# Networking and Data
+
+BetterRailwaySystem uses custom payloads for gameplay screens and synchronized media.
+
+## Networking Areas
+
+The main payload groups include:
+
+- opening block editors
+- saving block settings
+- requesting line maps
+- clearing saved map data
+- asset upload and asset synchronization
+
+## Persistent Data
+
+The server stores route data such as:
+
+- city name
+- line ID
+- direction
+- station list
+- line color
+- station coordinates
+
+## Asset Data
+
+Synchronized media currently uses:
+
+- client-side staging for upload preparation
+- server-side asset storage
+- redistribution to clients as chunked payloads
+- local resource-pack regeneration on the receiving client

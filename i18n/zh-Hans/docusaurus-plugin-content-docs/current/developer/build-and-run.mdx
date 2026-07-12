@@ -1,0 +1,33 @@
+---
+title: 构建与运行
+description: 常用的 Gradle 构建与启动命令。
+---
+
+# 构建与运行
+
+## 常用命令
+
+```bash
+./gradlew build
+./gradlew runClient
+./gradlew runServer
+```
+
+## 构建产物
+
+最终可分发的模组 jar 一般位于：
+
+```text
+build/libs/
+```
+
+在发布前，建议再次核对最终 jar 名称和依赖列表。
+
+## 本地验证建议
+
+在提交或打包前，至少确认：
+
+- 项目能正常编译
+- 客户端能启动
+- 专用服务器至少能启动到 EULA 阶段或更后面
+- 主要界面与交互仍可正常打开

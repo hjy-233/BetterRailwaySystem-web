@@ -1,0 +1,41 @@
+---
+title: World Map and Recording
+description: How route recording works and how the saved railway map is displayed.
+---
+
+# World Map and Recording
+
+The map system turns repeated train operation into reusable line data.
+
+## Recording Rules
+
+Route recording depends on:
+
+- line identity from the spawner
+- station visits from balises
+- a completed line flow such as collector arrival or circular return
+
+## Saved Data
+
+The map system stores:
+
+- city name
+- line ID
+- line direction
+- line color
+- station order
+- station coordinates
+
+## World Map Behavior
+
+The world railway map supports:
+
+- city grouping
+- line color legends
+- transfer merging by shared station name inside one city
+- searching
+- zoom and pan
+
+## Onboard Line Map
+
+While riding, players can open the current line context instead of the entire world map. This is useful when testing one route or checking the current station sequence during operation.

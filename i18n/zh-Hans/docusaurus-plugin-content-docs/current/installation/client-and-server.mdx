@@ -1,0 +1,35 @@
+---
+title: 客户端与服务端安装
+description: 在 Fabric 客户端或 Fabric 专用服务器上安装 BetterRailwaySystem。
+---
+
+# 客户端与服务端安装
+
+BetterRailwaySystem 同时支持单机与专用服务器，但联机需要两端配置一致。
+
+## 客户端安装
+
+1. 为 Minecraft `1.21.1` 安装 Fabric Loader。
+2. 将 BetterRailwaySystem jar 放入客户端 `mods` 文件夹。
+3. 同时放入 `Fabric API`。
+4. 同时放入 `Cloth Config`。
+5. 启动游戏并确认模组正常加载。
+
+## 专用服务器安装
+
+1. 准备一个 Minecraft `1.21.1` 的 Fabric 服务端。
+2. 将 BetterRailwaySystem jar 放入服务端 `mods` 文件夹。
+3. 加入 `Fabric API`。
+4. 加入 `Cloth Config`。
+5. 接受 EULA 并完成 Fabric 服务端的标准初始化。
+
+## 联机时最重要的一条规则
+
+如果你想使用完整功能，客户端和服务端都应该安装本模组：
+
+- **只有客户端安装**：本地文件存在，但依赖服务端的功能不会在未安装模组的服务器上工作。
+- **只有服务端安装**：也不够，因为客户端仍需要模组来显示界面、HUD 和接收同步素材。
+
+## 服务端不需要的东西
+
+`ModMenu` 仅对客户端有意义，专用服务器不需要安装。

@@ -1,0 +1,35 @@
+---
+title: Client and Server Installation
+description: Install BetterRailwaySystem on a Fabric client or a dedicated Fabric server.
+---
+
+# Client and Server Installation
+
+BetterRailwaySystem supports both singleplayer and dedicated multiplayer, but multiplayer requires a consistent setup.
+
+## Client Installation
+
+1. Install Fabric Loader for Minecraft `1.21.1`.
+2. Put the BetterRailwaySystem jar into the client `mods` folder.
+3. Put `Fabric API` into the same folder.
+4. Put `Cloth Config` into the same folder.
+5. Launch the game and verify the mod loads without errors.
+
+## Dedicated Server Installation
+
+1. Prepare a Fabric server for Minecraft `1.21.1`.
+2. Put the BetterRailwaySystem jar into the server `mods` folder.
+3. Add `Fabric API`.
+4. Add `Cloth Config`.
+5. Accept the Minecraft EULA and complete the normal Fabric server setup.
+
+## Important Multiplayer Rule
+
+If you want the full feature set, both sides should run the mod:
+
+- **Client only** gives you the local mod files, but server-backed features will not work on an unmodded server.
+- **Server only** is not enough, because clients also need the mod to render UI, overlays, and receive synchronized assets correctly.
+
+## Not Required on Servers
+
+`ModMenu` is optional for clients and is not required on dedicated servers.

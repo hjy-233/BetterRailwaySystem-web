@@ -1,0 +1,36 @@
+---
+title: First Spawner Route
+description: Configure a train spawner, line identity, and route recording flow.
+---
+
+# First Spawner Route
+
+This tutorial connects the dispatch and route-recording systems.
+
+## Goal
+
+Set up a `train_spawner` and make a route that can be recorded into the world railway map.
+
+## Steps
+
+1. Place a `train_spawner` under or next to a valid rail position.
+2. Open the spawner UI.
+3. Set a city name.
+4. Set a line ID.
+5. Pick a line color.
+6. Set the direction.
+7. Set the target train count.
+8. Add one or more balises on the route.
+9. Place a `train_collector` at the end, or make the route circular if that matches your design.
+
+## Expected Result
+
+When the minecart completes the line:
+
+- visited stations should be recorded
+- line color should be preserved
+- the route can later appear in the world railway map
+
+## Good Practice
+
+Keep station naming consistent. Shared names inside the same city are used for interchange merging in the map.

@@ -1,0 +1,45 @@
+---
+title: Operations Blocks
+description: How balises, stop rails, spawners, and collectors work together as an operations layer.
+---
+
+# Operations Blocks
+
+The operational block set is where BetterRailwaySystem moves beyond pure physics tuning.
+
+## Railway Balise
+
+Use balises for:
+
+- station state updates
+- passenger-facing announcements
+- temporary speed limits
+- BossBar updates
+
+## Stop Rail
+
+Use stop rails for:
+
+- approach-based stopping
+- dwell timing
+- redstone-based release
+- reliable restart logic
+
+## Train Spawner
+
+Use spawners for:
+
+- assigning city and line identity
+- choosing direction
+- maintaining a target number of active minecarts
+- circular-line dispatch workflows
+
+## Train Collector
+
+Use collectors for:
+
+- end-of-line removal
+- route recording finalization
+- preventing entity buildup on completed lines
+
+These four blocks are intended to work as one operational layer on top of vanilla rails.

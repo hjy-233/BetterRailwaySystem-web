@@ -1,0 +1,35 @@
+---
+title: First Balise
+description: Add the first station announcement and test title, image, and sound behavior.
+---
+
+# First Balise
+
+`railway_balise` is the core block for station-side event triggers.
+
+## Goal
+
+You will place one balise and make a minecart trigger an onboard event.
+
+## Steps
+
+1. Place a `railway_balise` next to your rail line.
+2. Open its configuration screen.
+3. Choose a mode such as `announcement` or `arrival`.
+4. Fill in the current station or next station fields.
+5. Optionally set title, subtitle, image ID, and sound ID.
+6. Ride a minecart through the trigger area.
+
+## Expected Result
+
+Depending on the mode and fields you set, the cart passengers should receive:
+
+- title/subtitle text
+- station state updates
+- optional BossBar updates
+- optional image and sound playback
+
+## Notes
+
+- media identifiers must exist on the current client, or come from a synchronized server asset library
+- only the passengers of the triggered minecart receive the announcement

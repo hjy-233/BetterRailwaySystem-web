@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "当前版本",
+    "description": "The label for version current"
+  },
+  "sidebar.mainSidebar.category.Introduction": {
+    "message": "介绍",
+    "description": "The label for category 'Introduction' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Installation": {
+    "message": "安装",
+    "description": "The label for category 'Installation' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Tutorials": {
+    "message": "教程",
+    "description": "The label for category 'Tutorials' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Advanced": {
+    "message": "进阶",
+    "description": "The label for category 'Advanced' in sidebar 'mainSidebar'"
+  },
+  "sidebar.mainSidebar.category.Developer": {
+    "message": "开发者",
+    "description": "The label for category 'Developer' in sidebar 'mainSidebar'"
+  }
+}

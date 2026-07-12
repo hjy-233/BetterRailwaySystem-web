@@ -1,0 +1,29 @@
+---
+title: Multiplayer and Assets
+description: Multiplayer behavior, server feature gating, and synchronized station media.
+---
+
+# Multiplayer and Assets
+
+BetterRailwaySystem supports multiplayer intentionally, but some systems depend on both sides having the mod.
+
+## Feature Gating
+
+If a client connects to a server that does not expose BetterRailwaySystem networking:
+
+- map requests are blocked
+- server-backed asset sync is blocked
+- related UI paths show a clear disabled message instead of trying to continue
+
+## Shared Asset Library
+
+On a modded server, synchronized assets allow:
+
+- server-stored balise images
+- server-stored balise sounds
+- redistribution to online clients
+- automatic sync for joining players
+
+## Permission Model
+
+On dedicated servers, asset upload is intended to be restricted to trusted users such as operators. This avoids turning the media pipeline into an unrestricted file upload surface.

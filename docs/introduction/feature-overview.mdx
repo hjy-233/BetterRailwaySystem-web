@@ -1,0 +1,47 @@
+---
+title: Feature Overview
+description: A high-level summary of the systems currently included in BetterRailwaySystem.
+---
+
+# Feature Overview
+
+This page summarizes the main feature groups currently implemented in BetterRailwaySystem.
+
+## Minecart Behavior
+
+- smooth acceleration on powered rails
+- smooth deceleration on unpowered powered rails
+- configurable top speed, acceleration, and deceleration
+- safer high-speed travel through substep-based movement
+- reduced derailment on curves and slopes
+- automatic following-distance braking behind another minecart on the same path
+
+## Passenger and Rendering Behavior
+
+- one minecart can carry multiple players
+- all passengers share the same vanilla minecart entity
+- each player keeps readable local first-person and third-person rendering
+- other onboard player models are hidden to avoid stacking and clipping
+
+## Railway Operation Blocks
+
+- `railway_balise`
+- `stop_rail`
+- `train_spawner`
+- `train_collector`
+
+Together these blocks provide route announcements, stopping logic, dispatch, and end-of-line recovery.
+
+## Route Recording and Map Systems
+
+- station visits can be recorded into a world railway map
+- city and line grouping is supported
+- current line maps can be opened while riding
+- a world railway map can be opened while not riding
+
+## Multiplayer and Media
+
+- dedicated servers are supported
+- balise images and sounds can be uploaded from a client to a modded server
+- synchronized media is redistributed to online players
+- when the server does not run the mod, client-side features that depend on server networking are disabled

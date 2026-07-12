@@ -1,0 +1,29 @@
+---
+title: Minecart Behavior
+description: Detailed behavior notes for speed control, stability, and automatic following logic.
+---
+
+# Minecart Behavior
+
+BetterRailwaySystem changes minecart motion in ways that matter most to railway play.
+
+## Smooth Speed Model
+
+Powered rails no longer behave like an immediate jump to a fixed top speed. Instead, the mod applies progressive acceleration and deceleration based on config values.
+
+## Stability Goals
+
+The current implementation prioritizes:
+
+- better high-speed curve handling
+- better slope handling
+- reduced derailment risk
+- preserved momentum where reasonable
+
+## Following and Blocking
+
+When another minecart is ahead on the same path, the system tries to maintain a configurable safe distance. If a collision becomes unavoidable, braking behavior can become more aggressive.
+
+## Idle Cleanup
+
+Minecarts without passengers can be despawned after a configurable unattended timeout. This is useful for long-running servers where inactive carts would otherwise accumulate.

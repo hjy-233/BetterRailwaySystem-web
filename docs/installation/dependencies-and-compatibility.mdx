@@ -1,0 +1,46 @@
+---
+title: Dependencies and Compatibility
+description: Required dependencies, supported versions, and compatibility expectations.
+---
+
+# Dependencies and Compatibility
+
+## Required Runtime Dependencies
+
+BetterRailwaySystem currently expects:
+
+- Minecraft `1.21.1`
+- Fabric Loader
+- Fabric API
+- Cloth Config
+- Java `21+`
+
+## Vanilla Compatibility
+
+The mod is designed around the vanilla rail system:
+
+- normal rails
+- powered rails
+- detector rails
+- activator rails
+- redstone-based station logic
+
+The goal is to extend behavior without replacing the track system itself.
+
+## Client and Server Compatibility
+
+### Fully Supported
+
+- singleplayer
+- LAN worlds where both sides have the mod
+- dedicated Fabric servers with matching mod installation
+
+### Limited
+
+If the client joins a server that does not run BetterRailwaySystem:
+
+- line-map requests are disabled
+- server asset upload and sync are disabled
+- other server-backed operations are gated off instead of trying to run incorrectly
+
+This behavior is intentional and avoids broken UI or misleading interactions.

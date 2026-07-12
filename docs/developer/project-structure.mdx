@@ -1,0 +1,33 @@
+---
+title: Project Structure
+description: How the BetterRailwaySystem codebase is organized.
+---
+
+# Project Structure
+
+The mod is split into a small number of focused packages.
+
+## Main Runtime Areas
+
+- `org.dcstudio.minecart`
+  Minecart behavior, state access, route recording logic, and supporting enums.
+
+- `org.dcstudio.station`
+  Railway block classes and block entities such as balises, stop rails, spawners, and collectors.
+
+- `org.dcstudio.network`
+  Client/server payloads and synchronization entry points.
+
+- `org.dcstudio.renderer`
+  Client UI screens, overlays, and route map rendering.
+
+- `org.dcstudio.config`
+  Config model, persistence, and commands.
+
+## Client-Specific Areas
+
+- `org.dcstudio.client`
+  Client initializer, config UI entry points, and client networking.
+
+- `org.dcstudio.client.asset`
+  Local resource-pack generation and synchronized asset handling.

@@ -1,0 +1,33 @@
+---
+title: Build and Run
+description: Common Gradle tasks for building and launching the project.
+---
+
+# Build and Run
+
+## Common Commands
+
+```bash
+./gradlew build
+./gradlew runClient
+./gradlew runServer
+```
+
+## Build Output
+
+The distributable jar is usually placed in:
+
+```text
+build/libs/
+```
+
+For release testing, verify the final mod jar name and dependency list before packaging.
+
+## Suggested Local Checks
+
+Before shipping changes, verify:
+
+- the project compiles cleanly
+- the client launches
+- the dedicated server launches to the normal EULA stage or further
+- the main UI flows still open correctly

@@ -1,0 +1,33 @@
+---
+title: 项目结构
+description: BetterRailwaySystem 代码库的主要组织方式。
+---
+
+# 项目结构
+
+模组代码被拆分为少量职责明确的包。
+
+## 主要运行时区域
+
+- `org.dcstudio.minecart`
+  矿车行为、状态访问、线路录入逻辑以及配套枚举。
+
+- `org.dcstudio.station`
+  铁路方块与方块实体，例如 Balise、Stop Rail、Spawner 和 Collector。
+
+- `org.dcstudio.network`
+  客户端/服务端数据包与同步入口。
+
+- `org.dcstudio.renderer`
+  客户端 UI、HUD 覆盖层和线路图渲染。
+
+- `org.dcstudio.config`
+  配置模型、持久化与指令。
+
+## 客户端专属区域
+
+- `org.dcstudio.client`
+  客户端入口、配置界面入口和客户端网络逻辑。
+
+- `org.dcstudio.client.asset`
+  本地资源包生成和同步素材处理逻辑。
