@@ -2,6 +2,10 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
+const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
+const deployUrl = process.env.DOCUSAURUS_URL ?? 'https://hjy-233.github.io';
+const deployBaseUrl = process.env.DOCUSAURUS_BASE_URL ?? '/BetterRailwaySystem-web/';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'BetterRailwaySystem',
@@ -10,8 +14,8 @@ const config = {
   future: {
     v4: true,
   },
-  url: 'https://betterrailwaysystem.github.io',
-  baseUrl: '/',
+  url: isGitHubActions ? deployUrl : 'http://localhost',
+  baseUrl: isGitHubActions ? deployBaseUrl : '/',
   organizationName: 'hjy-233',
   projectName: 'BetterRailwaySystem',
   onBrokenLinks: 'throw',
