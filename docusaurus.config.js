@@ -44,7 +44,7 @@ const config = {
         docs: {
           routeBasePath: 'docs',
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/hjy-233/BetterRailwaySystem/tree/main/BetterRailwaySystem-web/BetterRailwaySystem/',
+          editUrl: 'https://github.com/hjy-233/BetterRailwaySystem-web/tree/main/',
         },
         blog: false,
         theme: {
