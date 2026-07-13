@@ -1,6 +1,6 @@
 ---
 title: Server Asset Sync
-description: Upload balise sounds and images through a modded server and distribute them to connected clients.
+description: Upload transponder sounds and images through a modded server and distribute them to connected clients.
 ---
 
 # Server Asset Sync
@@ -15,7 +15,7 @@ This tutorial explains the current synchronized asset workflow.
 
 ## Steps
 
-1. Open the Balise asset library from the balise editor.
+1. Open the asset library from the transponder editor.
 2. Click **Open Folder**.
 3. Drag `.png` or `.ogg` files into the upload staging folder.
 4. Return to the game and click **Refresh**.
@@ -23,13 +23,7 @@ This tutorial explains the current synchronized asset workflow.
 6. The server stores them and re-broadcasts the asset library to online clients.
 7. Connected clients reload the synchronized media into their local resource pack.
 
-## What This Means
-
-After sync finishes:
+## Expected Behavior
 
 - the same identifiers can be used across players on that server
 - newly connected players can receive the server library on join
-
-## Current Limitation
-
-The current workflow is optimized for upload and distribution. Server-side asset deletion is still a separate future improvement.

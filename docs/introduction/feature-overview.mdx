@@ -1,6 +1,6 @@
 ---
 title: Feature Overview
-description: A high-level summary of the systems currently included in BetterRailwaySystem.
+description: The currently implemented features in BetterRailwaySystem.
 ---
 
 # Feature Overview
@@ -12,8 +12,8 @@ This page summarizes the main feature groups currently implemented in BetterRail
 - smooth acceleration on powered rails
 - smooth deceleration on unpowered powered rails
 - configurable top speed, acceleration, and deceleration
-- safer high-speed travel through substep-based movement
-- reduced derailment on curves and slopes
+- configurable minecart top speed based on tick substeps
+- reduced derailment on curves
 - automatic following-distance braking behind another minecart on the same path
 
 ## Passenger and Rendering Behavior
@@ -26,13 +26,11 @@ This page summarizes the main feature groups currently implemented in BetterRail
 ## Railway Operation Blocks
 
 - `railway_balise`
-- `stop_rail`
-- `train_spawner`
-- `train_collector`
+- `stop_rail`: stop rail
+- `train_spawner`: train spawner
+- `train_collector`: train collector
 
-Together these blocks provide route announcements, stopping logic, dispatch, and end-of-line recovery.
-
-## Route Recording and Map Systems
+## Route Recording and Map Systems (WIP)
 
 - station visits can be recorded into a world railway map
 - city and line grouping is supported

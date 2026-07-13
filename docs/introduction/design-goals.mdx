@@ -1,11 +1,11 @@
 ---
 title: Design Goals
-description: The core design principles behind BetterRailwaySystem.
+description: The core design principles of BetterRailwaySystem.
 ---
 
 # Design Goals
 
-BetterRailwaySystem is not trying to replace vanilla railway building. It is trying to make existing vanilla railway building more useful.
+The goal is to make the vanilla railway system easier to use, closer to real-world railways, while still keeping vanilla interaction patterns.
 
 ## Primary Principles
 
@@ -15,30 +15,28 @@ Players should continue using vanilla rails, powered rails, detector rails, acti
 
 ### Preserve the Vanilla Minecart Entity
 
-Instead of creating a new train entity family, BetterRailwaySystem extends the behavior of the vanilla minecart itself. This keeps vanilla interactions, existing worlds, and basic expectations intact.
+BetterRailwaySystem does not add a completely new minecart entity family, such as fully realistic train models or rail visuals. Instead, it directly extends the behavior of the vanilla minecart.
 
 ### Focus on Behavior and Operations
 
-The mod adds value in the places where vanilla minecarts feel limited:
+The mod adds value in areas where vanilla minecarts feel limited:
 
-- acceleration and braking behavior
+- acceleration
 - train dispatch and recovery
 - onboard announcements
 - stop control
 - route recording
-- line visualization
+- line visualization (WIP)
 
 ### Work in Multiplayer
 
-Railway systems become much more interesting once multiple players use them together. That is why dedicated server support, synchronized station media, and client feature gating are important parts of the design.
+Railway systems become much more interesting once multiple players use them together. That is why dedicated server support, synchronized station media, and client feature gating are part of the design.
 
 ## What the Mod Intentionally Avoids
 
-The mod does not aim to:
-
 - build a full standalone metro simulator
 - replace vanilla rail placement with custom infrastructure blocks
-- require custom rolling stock for all features
+- require custom train entities for core features
 - abandon singleplayer in favor of server-only workflows
 
 ## Resulting Tradeoff

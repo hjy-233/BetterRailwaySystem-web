@@ -1,6 +1,6 @@
 ---
 title: 功能总览
-description: BetterRailwaySystem 当前已实现系统的高层概览。
+description: BetterRailwaySystem 当前已实现的功能。
 ---
 
 # 功能总览
@@ -12,8 +12,8 @@ description: BetterRailwaySystem 当前已实现系统的高层概览。
 - 已充能动力铁轨上的平滑加速
 - 未充能动力铁轨上的平滑减速
 - 可配置最高速度、加速度、减速度
-- 基于子步进的高速运行稳定性优化
-- 弯道和坡道上的脱轨抑制
+- 基于tick子步进添加可配置矿车最高速度
+- 弯道上的脱轨抑制
 - 同轨前车安全距离自动刹车
 
 ## 乘客与渲染行为
@@ -25,14 +25,12 @@ description: BetterRailwaySystem 当前已实现系统的高层概览。
 
 ## 铁路运营方块
 
-- `railway_balise`
-- `stop_rail`
-- `train_spawner`
-- `train_collector`
+- `railway_balise`:铁路应答器
+- `stop_rail`：停车轨
+- `train_spawner`：发车器
+- `train_collector`：收车器
 
-这些方块共同提供报站、停车、发车与终点回收能力。
-
-## 线路录入与地图系统
+## 线路录入与地图系统(WIP)
 
 - 站点访问可以录入到世界铁路网
 - 支持城市与线路分组

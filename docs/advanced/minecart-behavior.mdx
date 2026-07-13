@@ -5,7 +5,7 @@ description: Detailed behavior notes for speed control, stability, and automatic
 
 # Minecart Behavior
 
-BetterRailwaySystem changes minecart motion in ways that matter most to railway play.
+BetterRailwaySystem changes minecart motion by targeting the worst parts of vanilla rail gameplay first.
 
 ## Smooth Speed Model
 
@@ -18,11 +18,13 @@ The current implementation prioritizes:
 - better high-speed curve handling
 - better slope handling
 - reduced derailment risk
-- preserved momentum where reasonable
+- preserved momentum, similar to the effect of the newer experimental minecart improvements
 
 ## Following and Blocking
 
 When another minecart is ahead on the same path, the system tries to maintain a configurable safe distance. If a collision becomes unavoidable, braking behavior can become more aggressive.
+
+This does not guarantee that all collisions can be avoided.
 
 ## Idle Cleanup
 
